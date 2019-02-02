@@ -1,0 +1,73 @@
+@import "../../vars.scss";
+.as-text {
+  font-weight: normal;
+  line-height: 1.6;
+  color: $dark_gray;
+}
+
+.as-text--s {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0;
+  margin-top: 12px;
+}
+.as-text--m {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.05px;
+  margin-top: 12px;
+}
+.as-text--l {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.05px;
+  margin-top: 16px;
+}
+.as-text--xl {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.07px;
+  margin-top: 28px;
+}
+
+/*** HEADING *****/
+.as-heading--xs {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: black;
+}
+.as-heading--s {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.05px;
+  color: black;
+}
+.as-heading--m {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.05px;
+  color: black;
+  margin: 10px 0 20px;
+}
+.as-heading--l {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.07px;
+  color: black;
+  margin: 15px 0;
+}
+.as-heading--xl {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.07px;
+  color: black;
+}

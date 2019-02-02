@@ -1,0 +1,12 @@
+@import "../../vars.scss";
+.as-box {
+  width: 100%;
+}
+.as-box__inner {
+  max-width: $breakpoint_desktop;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: $breakpoint_tablet) {
+}

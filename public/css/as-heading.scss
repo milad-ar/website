@@ -1,0 +1,57 @@
+@import "../../src/vars";
+$heading-primary-font-size-l: 3.75rem !default; // 60px
+$heading-primary-line-height-l: 1.1 !default;
+
+$heading-primary-font-size-m: $heading-primary-font-size-l * 0.9 !default; // 54px
+
+$heading-primary-font-size: $heading-primary-font-size-l * 0.8 !default; // 48px
+$heading-primary-line-height: 1.2 !default;
+
+$heading-hero-font-size-l: 8rem !default; // 128px
+$heading-hero-line-height-l: 1 !default;
+
+$heading-hero-font-size-m: $heading-hero-font-size-l * 0.75 !default; // 96px
+$heading-hero-line-height-m: 1 !default;
+
+/* ==========================
+ Component: Heading
+============================= */
+
+/* Primary
+============================= */
+.as-heading-primary {
+  font-size: $heading-primary-font-size;
+  line-height: $heading-primary-line-height;
+}
+
+// Tablet landscape and bigger
+@media only screen and (min-width: $breakpoint_tablet) {
+  .as-heading-primary {
+    font-size: $heading-primary-font-size-m;
+  }
+}
+
+// Desktop and bigger
+@media only screen and (min-width: $breakpoint_desktop) {
+  .as-heading-primary {
+    font-size: $heading-primary-font-size-l;
+    line-height: $heading-primary-line-height-l;
+  }
+}
+
+/* Line
+============================= */
+
+.as-heading-line {
+  overflow: hidden
+}
+.as-heading-line > * {
+  display: inline-block;
+  position: relative;
+}
+.as-heading-line > ::before,
+.as-heading-line > ::after {
+  content: "";
+  position: absolute;
+  top: unquote('calc(#{$heading-line-top} - (#{$heading-line-height} / 2))');
+}

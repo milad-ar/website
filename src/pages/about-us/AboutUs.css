@@ -1,0 +1,43 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+.as-portfolio {
+  background-image: url("/img/excavator.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 100px 0 120px 0 !important; }
+
+.as-employee-list .as-employee-card {
+  margin-bottom: 3rem; }
+
+.as-employee-card .image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem; }
+  .as-employee-card .image img {
+    height: 250px;
+    width: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+
+.as-employee-card .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center; }
+  .as-employee-card .details .info {
+    margin-bottom: 1rem; }
+  .as-employee-card .details .contact a {
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.25rem; }
+
+@media screen and (max-width: 768px) {
+  .as-portfolio {
+    background-image: unset;
+    padding: 50px 0 70px 0 !important; } }

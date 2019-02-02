@@ -1,0 +1,28 @@
+.as-iconBox {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px; }
+
+.as-iconBox__piece {
+  flex-basis: 100%; }
+
+.as-iconBox__icon {
+  width: 64px;
+  height: 64px;
+  font-size: 64px;
+  margin-bottom: 15px; }
+
+.as-iconBox__title {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px; }
+
+.as-iconBox__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #4c4c4c;
+  line-height: 20px; }

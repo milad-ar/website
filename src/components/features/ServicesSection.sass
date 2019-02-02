@@ -1,0 +1,35 @@
+@import "../../vars.scss"
+.as-servicesSection__wrapper
+  margin: 50px 0
+
+.as-servicesSection 
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+
+.as-servicesSection__service 
+  //flex-basis: 100%
+  max-width: 400px
+  margin-bottom: 30px
+
+
+@media only screen and (min-width: $breakpoint_tablet) 
+  .as-servicesSection 
+    justify-content: space-around
+    align-items: stretch
+  
+  .as-servicesSection__service 
+    flex-basis: 50%
+    flex-shrink: 0
+  
+
+.as-button
+  padding-right: 1.5rem
+  padding-left: 1.5rem
+  border: 2px solid #0a0a0a !important
+  border-radius: 0 !important
+  background: transparent !important
+
+  &:hover
+    border-color: black !important

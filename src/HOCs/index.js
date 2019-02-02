@@ -1,0 +1,1 @@
+export {default as toggleHOC} from './toggle-hoc';

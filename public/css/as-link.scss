@@ -1,0 +1,14 @@
+@import "../../src/vars";
+.as-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.as-link--inverse {
+  transition: color 0.35s ease;
+  color: white;
+
+  &:hover {
+    color: $yellow;
+  }
+}

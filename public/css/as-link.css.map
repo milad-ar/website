@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,QAAS;EACP,OAAO,EAAE,YAAY;EACrB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;;AAEd,iBAAkB;EAChB,UAAU,EAAE,gBAAgB;EAC5B,KAAK,EAAE,KAAK;EAEZ,uBAAQ;IACN,KAAK,ECXA,OAAO",
+"sources": ["as-link.scss","../../src/vars.scss"],
+"names": [],
+"file": "as-link.css"
+}

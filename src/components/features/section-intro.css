@@ -1,0 +1,18 @@
+.as-section-intro {
+  padding: 40px 0;
+  background-color: #f5f5f5; }
+
+.as-section-intro__heading {
+  text-align: center; }
+
+.as-section-intro__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.as-section-intro__item {
+  flex-basis: 100%; }
+
+@media only screen and (min-width: 768px) {
+  .as-section-intro__item {
+    flex-basis: 48%; } }

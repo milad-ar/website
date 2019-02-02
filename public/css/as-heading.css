@@ -1,0 +1,78 @@
+/*
+Error: Undefined variable: "$heading-line-top".
+        on line 56 of as-heading.scss
+
+51: }
+52: .as-heading-line > ::before,
+53: .as-heading-line > ::after {
+54:   content: "";
+55:   position: absolute;
+56:   top: unquote('calc(#{$heading-line-top} - (#{$heading-line-height} / 2))');
+57: }
+
+Backtrace:
+as-heading.scss:56
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/script/tree/string_interpolation.rb:93:in `_perform'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:186:in `perform_arg'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `block in _perform'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `each'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `each_with_index'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `each'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `map'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/script/tree/funcall.rb:133:in `_perform'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
+/Users/sahand/.rvm/gems/ruby-2.5.1/gems/sass-3.5.6/bin/scss:13:in `<top (required)>'
+/Users/sahand/.rvm/gems/ruby-2.5.1/bin/scss:23:in `load'
+/Users/sahand/.rvm/gems/ruby-2.5.1/bin/scss:23:in `<main>'
+/Users/sahand/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:15:in `eval'
+/Users/sahand/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$heading-line-top\".\A         on line 56 of as-heading.scss\A \A 51: }\A 52: .as-heading-line > ::before,\A 53: .as-heading-line > ::after {\A 54:   content: \"\";\A 55:   position: absolute;\A 56:   top: unquote('calc(#{$heading-line-top} - (#{$heading-line-height} / 2))');\A 57: }"; }

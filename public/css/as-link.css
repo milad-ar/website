@@ -1,0 +1,12 @@
+.as-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%; }
+
+.as-link--inverse {
+  transition: color 0.35s ease;
+  color: white; }
+  .as-link--inverse:hover {
+    color: #fcb834; }
+
+/*# sourceMappingURL=as-link.css.map */

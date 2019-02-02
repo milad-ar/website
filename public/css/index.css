@@ -1,0 +1,106 @@
+/* Headings
+ ========================================================================== */
+h1,
+.as-h1,
+h2,
+.as-h2,
+h3,
+.as-h3,
+h4,
+.as-h4,
+h5,
+.as-h5,
+h6,
+.as-h6 {
+  margin: 0 0 20px 0;
+  font-family: iranyekan, sans-serif;
+  font-weight: normal;
+  color: white;
+  text-transform: none; }
+
+/* Add margin if adjacent element */
+* + h1,
+* + .as-h1,
+* + h2,
+* + .as-h2,
+* + h3,
+* + .as-h3,
+* + h4,
+* + .as-h4,
+* + h5,
+* + .as-h5,
+* + h6,
+* + .as-h6 {
+  margin-top: 10px; }
+
+/*
+ * Sizes
+ */
+h1,
+.as-h1 {
+  font-size: 2.23125rem;
+  line-height: 1.2; }
+
+h2,
+.as-h2 {
+  font-size: 1.7rem;
+  line-height: 1.3; }
+
+h3,
+.as-h3 {
+  font-size: 1.5rem;
+  line-height: 1.4; }
+
+h4,
+.as-h4 {
+  font-size: 1.25rem;
+  line-height: 1.4; }
+
+h5,
+.as-h5 {
+  font-size: 16px;
+  line-height: 1.4; }
+
+h6,
+.as-h6 {
+  font-size: 0.875rem;
+  line-height: 1.4; }
+
+.as-bg--transparent {
+  background: transparent; }
+
+.as-icon--xl {
+  font-size: 24px;
+  height: 24px;
+  width: 24px; }
+
+.as-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%; }
+
+.as-link--inverse {
+  transition: color 0.35s ease;
+  color: white; }
+  .as-link--inverse:hover {
+    color: #fcb834; }
+
+.as-horizontal-list {
+  display: flex;
+  align-items: center; }
+
+.as-fullWidthHeight {
+  width: 100%;
+  height: 100%; }
+
+.as-layout--100w100h {
+  width: 100%;
+  height: 100%; }
+
+.as-flex {
+  display: flex; }
+
+.as-flex--center {
+  align-items: center; }
+
+/*# sourceMappingURL=index.css.map */

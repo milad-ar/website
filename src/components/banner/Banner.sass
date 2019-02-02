@@ -1,0 +1,102 @@
+@import "../../vars.scss"
+.as-banner
+  margin-top: -80px
+
+.as-carousel 
+  position: relative
+  //height: 100vh
+  overflow: hidden
+
+.as-carousel__inner 
+  position: relative
+  display: flex
+  flex-wrap: nowrap
+  transform: translate3d(100%, 0, 0)
+  transition: transform 0.35s ease
+
+.as-carousel__slide 
+  //min-height: 100vh
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-basis: 100%
+  flex-shrink: 0
+  &.active
+
+.as-hero 
+  color: white
+
+.as-hero__title 
+  font-size: 2rem
+  line-height: 1.5
+  margin: 1.5rem
+  text-align: center
+
+.as-hero__subtitle 
+  margin: 2rem
+  font-size: 1.1rem
+  line-height: 1.5
+  text-align: center
+  font-weight: 400
+
+.as-carousel__indicators 
+  position: absolute
+  bottom: 10px
+  left: 50%
+  z-index: 10
+  width: 60%
+  padding-left: 0
+  margin-left: -30%
+  margin-bottom: 10px
+  text-align: center
+  color: $yellow
+  display: flex
+  justify-content: center
+
+.as-hero__button
+  font-family: inherit
+  color: white !important
+  padding: 12px 40px !important
+  background: transparent !important
+  border-radius: 0 !important
+  font-size: 1.2rem !important
+  border: 2px solid white !important
+  cursor: pointer
+  &:hover
+    background: white !important
+    color: black !important
+    transition: background-color 0.35ms ease !important
+.as-dot
+  cursor: pointer
+  width: 15px
+  height: 15px
+  padding: 10px
+  border-radius: 50%
+  background-color: $yellow
+  opacity: 0.4
+  margin: 0 10px
+  z-index: 10
+
+  &.active 
+    opacity: 1
+
+
+@media only screen and (min-width: 768px) 
+  .as-carousel__indicators 
+    bottom: 20px
+  
+  .as-hero__title 
+    font-size: 3.2rem
+    margin: 1.5rem
+    text-align: center
+  
+  .as-hero__subtitle 
+    margin: 2rem
+    text-align: center
+    font-weight: 400
+  
+  .as-hero__button 
+    margin: 2rem auto

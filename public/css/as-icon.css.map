@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,YAAa;EACX,SAAS,EAAE,IAAI",
+"sources": ["as-icon.scss"],
+"names": [],
+"file": "as-icon.css"
+}

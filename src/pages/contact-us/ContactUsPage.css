@@ -1,0 +1,8 @@
+.as-contact-us .details ul {
+  list-style-type: none;
+  color: black; }
+  .as-contact-us .details ul li {
+    margin-bottom: 4rem; }
+    .as-contact-us .details ul li .item-value.is-pulled-left {
+      margin-top: 2rem;
+      text-align: left; }
