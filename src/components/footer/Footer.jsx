@@ -1,4 +1,6 @@
 import * as React from "react";
+import { Link } from "@reach/router";
+import config from "../../configs/config";
 import "./Footer.css";
 import Box from "../box";
 
@@ -10,7 +12,7 @@ const content = {
     copyRightSecond: "می‌باشد.",
     brandName: "عرشیا سازان",
     companyInfo:
-      "شرکت عرشیا سازان در سال ۱۳۹۲ به عنوان شرکت سهامی خاص به ثبت رسیده و هدف از تاسیس آن طراحی، ساخت و اجرای پروژه‌های شهری بوده است.",
+      "شرکت عرشیا سازان در سال ۱۳۹۳ به عنوان شرکت مسئولیت محدود به ثبت رسیده و هدف از تاسیس آن طراحی، ساخت و اجرای پروژه‌های شهری بوده است.",
     tel: "",
     contact: {
       address: "آدرس",
@@ -41,7 +43,7 @@ const data = {
   },
   links: {
     aboutUs: "/about-us",
-    contactUs: "/contact",
+    contactUs: "/contact-us",
     projects: "/projects",
     services: "/services"
   }
@@ -77,9 +79,7 @@ export default function Footer(props) {
               </li>
               <li className="as-footer__contactItem">
                 <strong>{ct.contact.tel}</strong>:{" "}
-                <span dir="ltr">
-                  {data.contact.tel1} , {data.contact.tel2}
-                </span>
+                <span dir="ltr">{config[LOCALE].info.workTel}</span>
               </li>
             </ul>
           </div>
@@ -89,23 +89,23 @@ export default function Footer(props) {
             </h3>
             <ul className="as-footer__section__links">
               <li>
-                <a href={data.links.services}>{ct.links.services}</a>
+                <Link to={data.links.services}>{ct.links.services}</Link>
               </li>
               <li>
-                <a href={data.links.projects}>{ct.links.projects}</a>
+                <Link to={data.links.projects}>{ct.links.projects}</Link>
               </li>
               <li>
-                <a href={data.links.aboutUs}>{ct.links.aboutUs}</a>
+                <Link to={data.links.aboutUs}>{ct.links.aboutUs}</Link>
               </li>
               <li>
-                <a href={data.links.contactUs}>{ct.links.contactUs}</a>
+                <Link to={data.links.contactUs}>{ct.links.contactUs}</Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="as-footer__copyright">
           <p>
-            © {"۱۳۹۷"} - {content[LOCALE].copyrightFirst}{" "}
+            © {"۱۳۹۳"} - {"۱۳۹۷"} {content[LOCALE].copyrightFirst}{" "}
             <strong>{content[LOCALE].brandName}</strong>{" "}
             {content[LOCALE].copyRightSecond}
           </p>
