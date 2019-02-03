@@ -1,8 +1,8 @@
 import React from "react";
-import SubPageHeader from "../components/subpage-header/SubPageHeader";
-import { Nav as TopNav } from "../components/nav";
-import { Footer } from "../components/footer";
-import { FaNum } from "../components/farsi";
+import SubPageHeader from "../../components/subpage-header/SubPageHeader";
+import { Nav as TopNav } from "../../components/nav/index";
+import { Footer } from "../../components/footer/index";
+import { FaNum } from "../../components/farsi/index";
 
 const LOCALE = "fa";
 const translations = {

@@ -108,8 +108,13 @@ function LinkedinIcon({ className }) {
     </span>
   );
 }
-function LinkedinBlackIcon() {
-  return <span className="icon-linkedin1" />;
+function LinkedinBlackIcon({ className, ...rest }) {
+  return (
+    <span
+      className={`icon-linkedin1 ${className !== undefined ? className : ""}`}
+      {...rest}
+    />
+  );
 }
 function MenuIcon() {
   return <span className="icon-menu" />;

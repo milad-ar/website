@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import { Router } from "@reach/router";
-import { AboutUsPage, ExamplePage, HomePage } from "./pages";
-import "normalize.css";
-import "./App.sass";
-import "./vars.scss";
-import ServicesPage from "./pages/ServicesPage";
-import ProjectsPage from "./pages/ProjectsPage";
-import ContactUsPage from "./pages/contact-us";
+
+import {
+  AboutUsPage,
+  ContactUsPage,
+  HomePage,
+  ProjectsPage,
+  ServicesPage
+} from "./pages/";
+
+import "./styles/App.sass";
 
 // The default language
 export const LocaleContext = React.createContext("fa");
@@ -20,7 +23,6 @@ class App extends Component {
             <HomePage path="/" />
             <AboutUsPage path="about-us" />
             <ContactUsPage path="contact-us" />
-            <ExamplePage path="example" />
             <ServicesPage path="services" />
             <ProjectsPage path="projects" />
           </Router>

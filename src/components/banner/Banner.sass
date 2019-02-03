@@ -1,20 +1,20 @@
-@import "../../vars.scss"
+@import "../../styles/vars.sass"
 .as-banner
   margin-top: -80px
 
-.as-carousel 
+.as-carousel
   position: relative
   //height: 100vh
   overflow: hidden
 
-.as-carousel__inner 
+.as-carousel__inner
   position: relative
   display: flex
   flex-wrap: nowrap
   transform: translate3d(100%, 0, 0)
   transition: transform 0.35s ease
 
-.as-carousel__slide 
+.as-carousel__slide
   //min-height: 100vh
   background-size: cover
   background-position: center center
@@ -26,23 +26,23 @@
   flex-shrink: 0
   &.active
 
-.as-hero 
+.as-hero
   color: white
 
-.as-hero__title 
+.as-hero__title
   font-size: 2rem
   line-height: 1.5
   margin: 1.5rem
   text-align: center
 
-.as-hero__subtitle 
+.as-hero__subtitle
   margin: 2rem
   font-size: 1.1rem
   line-height: 1.5
   text-align: center
   font-weight: 400
 
-.as-carousel__indicators 
+.as-carousel__indicators
   position: absolute
   bottom: 10px
   left: 50%
@@ -80,23 +80,23 @@
   margin: 0 10px
   z-index: 10
 
-  &.active 
+  &.active
     opacity: 1
 
 
-@media only screen and (min-width: 768px) 
-  .as-carousel__indicators 
+@media only screen and (min-width: 768px)
+  .as-carousel__indicators
     bottom: 20px
-  
-  .as-hero__title 
+
+  .as-hero__title
     font-size: 3.2rem
     margin: 1.5rem
     text-align: center
-  
-  .as-hero__subtitle 
+
+  .as-hero__subtitle
     margin: 2rem
     text-align: center
     font-weight: 400
-  
-  .as-hero__button 
+
+  .as-hero__button
     margin: 2rem auto

@@ -1,6 +1,7 @@
 // @flow
 import * as React from "react";
 import cs from "classnames";
+import { Link } from "@reach/router";
 import "./Banner.sass";
 
 const LOCALE = "fa";
@@ -11,8 +12,8 @@ const content = {
       {
         bgSrc: "/img/mainbanner01.jpg",
         title: "توانمند در طراحی‌، زبده در اجرا",
-        subtitle: "شرکت مشاور و اجرا از سال ۱۳۹۲",
-        buttonHref: "/projects",
+        subtitle: "شرکت مشاور و اجرا از سال ۱۳۹۳",
+        target: "/projects",
         buttonText: "مشاهده پروژه‌های ما"
       },
       {
@@ -20,14 +21,14 @@ const content = {
         title: "تسلط بر تمامی مراحل ساختمان‌سازی",
         subtitle: "پیاده‌سازی جدیدترین و به‌صرفه‌ترین روش‌های اجرای ساختمان",
         buttonText: "مشاهده خدمات ما",
-        buttonHref: "/products"
+        target: "/services"
       },
       {
         bgSrc: "/img/mainbanner03.jpg",
         title: "ترکیبی از مهندسان با‌تجربه و جوان",
         subtitle: "پیشروی سریع کار همزمان با دقت بالا",
         buttonText: "تیم مهندسی ما",
-        buttonHref: "/about-us"
+        target: "/about-us"
       }
     ]
   }
@@ -112,9 +113,9 @@ function Slide(props: {
           className="column"
           style={{ display: "flex", justifyContent: "center" }}
         >
-          <a className="button as-hero__button" href={props.buttonHref}>
+          <Link className="button as-hero__button" to={props.target}>
             {props.buttonText}
-          </a>
+          </Link>
         </div>
       </div>
     </div>

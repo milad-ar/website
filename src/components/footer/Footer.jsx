@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "@reach/router";
 import config from "../../configs/config";
+import getIcon from "../icons";
 import "./Footer.css";
 import Box from "../box";
 
@@ -51,6 +52,7 @@ const data = {
 
 export default function Footer(props) {
   const ct = content[LOCALE];
+  const LinkedinIcon = getIcon("linkedinBlack");
 
   return (
     <Box className="as-footer__wrapper">
@@ -104,6 +106,17 @@ export default function Footer(props) {
           </div>
         </div>
         <div className="as-footer__copyright">
+          <p style={{ marginBottom: "0.5rem" }}>
+            <span className="is-size-4">
+              <a
+                href="https://www.linkedin.com/company/arshiasazan/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkedinIcon className="is-info" />
+              </a>
+            </span>
+          </p>
           <p>
             © {"۱۳۹۳"} - {"۱۳۹۷"} {content[LOCALE].copyrightFirst}{" "}
             <strong>{content[LOCALE].brandName}</strong>{" "}
